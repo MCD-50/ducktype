@@ -411,7 +411,7 @@
     else {
       types = [];
       for (i = 0, ii = arguments.length; i < ii; i++) {
-        if ((i === ii - 1) && arguments[i].constructor === Object) {
+        if ((i === ii - 1) && arguments[i] != null && arguments[i] != undefined && arguments[i].constructor === Object) {
           options = arguments[i];
         }
         else {
